@@ -9,7 +9,9 @@ const openai = new OpenAIApi(configuration);
 async function runCompletion() {
     const res = await openai.createCompletion({
         model: "text-davinci-003",
-        prompt: "Can you please help me manage my time better?"
+        prompt: "Can you please help me manage my time better?",
+        max_tokens: 4000,
+        temperature: 1,
     });
 
     console.log(res.data.choices[0]);
