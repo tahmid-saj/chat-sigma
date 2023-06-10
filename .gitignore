@@ -1,5 +1,7 @@
-# src files
+# node modules
+node_modules
 
+# src files
 
 # env variables
 .env
