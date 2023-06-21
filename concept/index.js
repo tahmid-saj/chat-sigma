@@ -10,7 +10,7 @@ const openai = axios.create({
         "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
     }
 });
-
+ 
 async function createChatCompletion(messages, options = {}) {
     try {
         const response = await openai.post("/chat/completions", {
