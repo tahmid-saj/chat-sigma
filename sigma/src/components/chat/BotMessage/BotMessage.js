@@ -5,7 +5,7 @@ import "./BotMessage.css";
 const BotMessage = () => {
   return (
     <div className="white f5 botMessageBox">
-      <p className="botMessage">Bot message</p>
+      <p className="botMessage">{'Sigma : Bot message'}</p>
     </div>
   );
 };
