@@ -4,6 +4,7 @@ import './App.css';
 import Navigation from './components/chat/Navigation/Navigation';
 import Icon from './components/chat/Icon/Icon';
 import StartMessage from './components/chat/StartMessage/StartMessage';
+import ChatMessages from './components/chat/ChatMessages/ChatMessages';
 
 class App extends Component {
   render() {
@@ -16,13 +17,9 @@ class App extends Component {
         
         <StartMessage/>
 
-        {/*
-        <ChatMessages>
-          // Chat messages will contain multiple UserCoupledBotMessage components
-          <UserCoupledBotMessage/>
-
-          // UserCoupledBotMessage will contain a single UserMessage and a BotMessage component
-        </ChatMessages> */}
+        {/* // ChatMessages will contain multiple UserCoupledBotMessage components
+        // UserCoupledBotMessage will contain a single UserMessage and a BotMessage component */}
+        <ChatMessages/>
 
         {/* <MessageBox/> */}
 
