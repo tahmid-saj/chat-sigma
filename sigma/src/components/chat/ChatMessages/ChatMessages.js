@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 import UserCoupledBotMessage from "../UserCoupledBotMessage/UserCoupledBotMessage";
 
-const ChatMessages = () => {
+const ChatMessages = ({ userBotMessageCouples }) => {
   return (
     <div>
-      <UserCoupledBotMessage/>
+      <UserCoupledBotMessage userBotMessageCouples={userBotMessageCouples}/>
     </div>
   );
 };
