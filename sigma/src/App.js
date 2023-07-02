@@ -5,6 +5,7 @@ import Navigation from './components/chat/Navigation/Navigation';
 import Icon from './components/chat/Icon/Icon';
 import StartMessage from './components/chat/StartMessage/StartMessage';
 import ChatMessages from './components/chat/ChatMessages/ChatMessages';
+import MessageBox from './components/chat/MessageBox/MessageBox';
 
 class App extends Component {
   render() {
@@ -17,11 +18,11 @@ class App extends Component {
         
         <StartMessage/>
 
-        {/* // ChatMessages will contain multiple UserCoupledBotMessage components
-        // UserCoupledBotMessage will contain a single UserMessage and a BotMessage component */}
+        {/* ChatMessages will contain multiple UserCoupledBotMessage components
+        UserCoupledBotMessage will contain a single UserMessage and a BotMessage component */}
         <ChatMessages/>
 
-        {/* <MessageBox/> */}
+        <MessageBox/>
 
         {/* 
         // Export page below 

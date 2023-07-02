@@ -1,0 +1,12 @@
+.messageBoxInput {
+  background-color:#282828;
+  margin: auto;
+  border-radius: 20px;
+  width: 70%;
+  color: white;
+}
+
+.btnSendMessage {
+  background-color: transparent;
+  border-radius: 20px;
+}
