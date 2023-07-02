@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-const Navigation = () => {
+const Navigation = ({ onRouteChange }) => {
   return (
     <nav style={{ display: "flex", justifyContent: "flex-end" }}>
-      <p className="f3 link dim white pa3 pointer">Chat</p>
-      <p className="f3 link dim white pa3 pointer">Export</p>
-      <p className="f3 link dim white pa3 pointer">About</p>
+      <p onClick={() => onRouteChange("chat")} className="f3 link dim white pa3 pointer">Chat</p>
+      <p onClick={() => onRouteChange("export")} className="f3 link dim white pa3 pointer">Export</p>
+      <p onClick={() => onRouteChange("about")} className="f3 link dim white pa3 pointer">About</p>
     </nav>
   );
 };
