@@ -1,0 +1,12 @@
+.botMessageBox {
+  border-radius: 20px;
+  background-color:#282828;
+  background-size:16px 16px;
+  margin: auto;
+  width: 70%;
+}
+
+.botMessage {
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+}

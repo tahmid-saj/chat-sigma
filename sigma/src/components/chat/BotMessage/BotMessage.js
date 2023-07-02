@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 
+import "./BotMessage.css";
+
 const BotMessage = () => {
   return (
-    <div>
-      <p>Bot message</p>
+    <div className="white f5 botMessageBox">
+      <p className="botMessage">Bot message</p>
     </div>
   );
 };
