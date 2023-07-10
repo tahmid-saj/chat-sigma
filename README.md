@@ -12,7 +12,7 @@ A chat bot developed to answer every day queries, have communication and be a vi
 
 ## Export
 
--	Allows users to export the chat data to a PDF, text file or email using the stored data in the Postgres and MongoDB database
+-	Allows users to export the chat data to a PDF, text file or email using the stored data in the PostgreSQL and MongoDB database
 
 <img width="905" alt="image" src="https://github.com/tahmid-saj/chat-sigma/assets/64264899/61814b5d-e357-49ba-b0d7-7f56f3f97468">
 
