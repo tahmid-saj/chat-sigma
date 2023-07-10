@@ -6,7 +6,7 @@ A chat bot developed to answer every day queries, have communication and be a vi
 
 -	Contains starter screen for the chat
 -	Allows users to communicate with the chat via the GPT API
--	Sends direct requests to the Backend Server after the user enters text into the chat
+-	Sends direct requests to the backend server after the user enters text into the chat
 
 <img width="893" alt="image" src="https://github.com/tahmid-saj/chat-sigma/assets/64264899/c25f9525-2f71-4315-969d-7b652bc19d31">
 
