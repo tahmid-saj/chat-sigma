@@ -42,6 +42,13 @@ class App extends Component {
   //   });
   // }
 
+  getbitnessage{} {
+    fetch("http://localhost:3000/")
+    .then(response) => {
+      console.log(response);
+    });
+  }
+
   initiateChatSession = (userId, userMessageInput, botMessageOutput) => {
     fetch("http://localhost:3000/initiateChat", {
       method: "post",
