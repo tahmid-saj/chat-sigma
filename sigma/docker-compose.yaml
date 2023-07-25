@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+
+  # frontend
+  chat-sigma:
+    container_name: frontend
+    build: ./
+    command: npm start
+    working_dir: /usr/src/chat-sigma
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/usr/src/chat-sigma
