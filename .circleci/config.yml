@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  bobby:
+    docker:
+      - image: "circleci/ruby:2.4.1"
+    steps:
+      - checkout
+      - run: "echo testing"
+
+  sally:
+    docker:
+      - image: "circleci/ruby:2.4.1"
+    steps:
+      - checkout
+      - run: "echo testing 2"
+
+workflows:
+  version: 2
+  bobby_sally:
+    jobs:
+      - bobby
+      - sally
