@@ -14,9 +14,9 @@ jobs:
       - checkout
       - run: "echo testing 2"
 
-  workflows:
-    version: 2
-    bobby_sally:
-      jobs:
-        - bobby
-        - sally
+workflows:
+  version: 2
+  bobby_sally:
+    jobs:
+      - bobby
+      - sally
