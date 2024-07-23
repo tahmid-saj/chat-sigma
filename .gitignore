@@ -5,6 +5,13 @@
 /.pnp
 .pnp.js
 
+# src
+/concept/node_modules
+node_modules
+
+# env variables
+.env
+
 # testing
 /coverage
 
@@ -21,19 +28,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# keys
-.env
-App.js
-App
-
-# node modules
-node_modules
-
-# src files
-
-# env variables
-.env
-
-# keys
-App
+.vercel

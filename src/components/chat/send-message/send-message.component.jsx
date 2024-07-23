@@ -29,7 +29,7 @@ const SendMessage = () => {
     <div className="send-message-container">
       <div className="send-message-form">
         <textarea className="send-message-input" type="text" name="messageInput" rows="5" onChange={ handleChange }></textarea>
-        <button className="send-message-btn" type="button" onClick={ handleSubmit }><KeyboardDoubleArrowUpIcon fontSize="large"/></button>
+        <button className="send-message-btn" type="button" onClick={ handleSubmit }><KeyboardDoubleArrowUpIcon fontSize="large" sx={{ color: "black" }}/></button>
       </div>
     </div>
   )
