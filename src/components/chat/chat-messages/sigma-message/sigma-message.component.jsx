@@ -1,5 +1,5 @@
 import "./sigma-message.styles"
-import { SigmaMessageContainer } from "./sigma-message.styles"
+import { SigmaMessageContainer, MessageContainer } from "./sigma-message.styles"
 import { Fragment } from "react"
 import SimplePaper from "../../../shared/mui/paper/paper.component"
 import { Typography } from "@mui/material"
@@ -18,7 +18,9 @@ const SigmaMessage = ({ sigmaMessage }) => {
       <SimplePaper styles={ paperStyles }>
         <FunctionsIcon sx={{ backgroundColor: COLOR_CODES.general["6"], borderRadius: "2rem",
           margin: "0.25% 1% 15px 0%" }}/>
-        <Typography sx={{ color: COLOR_CODES.general["4"] }}>{ sigmaMessage }</Typography>
+        <MessageContainer>
+          <Typography sx={{ color: COLOR_CODES.general["4"] }}>{ sigmaMessage }</Typography>
+        </MessageContainer>
       </SimplePaper>
     </SigmaMessageContainer>
   )
