@@ -44,7 +44,7 @@ export const COLOR_CODES = {
   },
   scrollbar: {
     scroll: "#666666",
-    background: "white"
+    background: "#1A1C20"
   },
   general: {
     "0": "#FFC94A",
