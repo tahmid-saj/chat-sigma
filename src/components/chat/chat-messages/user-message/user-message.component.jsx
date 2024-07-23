@@ -9,11 +9,11 @@ const paperStyles = {
   margin: "0.75% 2% 0.75% 23%"
 }
 
-const UserMessage = () => {
+const UserMessage = ({ userMessage }) => {
   return (
     <Fragment>
       <SimplePaper styles={ paperStyles }>
-        <Typography sx={{ color: COLOR_CODES.general["0"] }}>User message</Typography>
+        <Typography sx={{ color: COLOR_CODES.general["0"] }}>{ userMessage }</Typography>
       </SimplePaper>
     </Fragment>
   )

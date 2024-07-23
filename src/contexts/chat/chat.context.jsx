@@ -7,7 +7,14 @@ const getChatResponseHelper = async (messageCouples, userMessage) => {
   if (validateChatMessageInput(userMessage)) return messageCouples
 
   const res = await getChatResponse(userMessage)
-  return res
+
+  return [
+    ...messageCouples,
+    {
+      userMessage: userMessage,
+      sigmaMessage: res
+    }
+  ]
 }
 
 // initial state
@@ -15,8 +22,10 @@ export const ChatContext = createContext({
   messageCouples: [],
   // messageCouples structure
   // [
-  //   userMessage: "",
-  //   sigmaMessage: ""
+  //   {
+  //     userMessage: "",
+  //     sigmaMessage: ""
+  //   }
   // ]
 
   getChatResponse: () => {}
