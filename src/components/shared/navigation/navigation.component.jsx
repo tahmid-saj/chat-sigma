@@ -21,7 +21,7 @@ const NavigationBar = () => {
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href={`${NAV_LINKS.paths.export}`}>Export</a>
+              <a class="nav-link disabled" aria-current="page" href={`${NAV_LINKS.paths.export}`}>Export</a>
             </li>
 
             <li class="nav-item">

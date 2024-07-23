@@ -1,6 +1,8 @@
 import { Fragment, useState } from "react"
 import "./send-message.styles.scss"
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
+import { useContext } from "react";
+import { ChatContext } from "../../../contexts/chat/chat.context";
 
 const defaultFormFields = {
   messageInput: ""
@@ -8,14 +10,15 @@ const defaultFormFields = {
 
 const SendMessage = () => {
   const [formFields, setFormFields] = useState(defaultFormFields)
+  const { getChatResponse } = useContext(ChatContext)
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields)
   }
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault()
-    alert(formFields.messageInput)
+    getChatResponse(formFields.messageInput)
 
     resetFormFields()
   }

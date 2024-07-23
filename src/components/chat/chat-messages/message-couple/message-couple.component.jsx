@@ -3,11 +3,11 @@ import { MessageCoupleContainer } from "./message-couple.styles"
 import SigmaMessage from "../sigma-message/sigma-message.component"
 import UserMessage from "../user-message/user-message.component"
 
-const MessageCouple = () => {
+const MessageCouple = ({ messageCouple }) => {
   return (
     <MessageCoupleContainer>
-      <UserMessage></UserMessage>
-      <SigmaMessage></SigmaMessage>
+      <UserMessage userMessage={ messageCouple.userMessage }></UserMessage>
+      <SigmaMessage sigmaMessage={ messageCouple.sigmaMessage }></SigmaMessage>
     </MessageCoupleContainer>
   )
 }
