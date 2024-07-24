@@ -4,12 +4,17 @@ import { Fragment } from "react"
 import MessageCouple from "./message-couple/message-couple.component"
 import { useContext } from "react"
 import { ChatContext } from "../../../contexts/chat/chat.context"
+import LinearIndeterminate from "../../shared/mui/linear-progress/linear-progress.component"
 
 const ChatMessages = () => {
-  const { messageCouples } = useContext(ChatContext)
+  const { messageCouples, responseLoading } = useContext(ChatContext)
 
   return (
     <ChatMessagesContainer>
+      {
+        responseLoading === true && <LinearIndeterminate/>
+      }
+
       {
         messageCouples.map((messageCouple, index) => {
           return (
