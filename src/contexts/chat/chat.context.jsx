@@ -28,19 +28,24 @@ export const ChatContext = createContext({
   //   }
   // ]
 
+  responseLoading: false,
+
   getChatResponse: () => {}
 })
 
 // chat provider
 export const ChatProvider = ({ children }) => {
   const [messageCouples, setMessageCouples] = useState([])
+  const [responseLoading, setResponseLoading] = useState(false)
 
   const getChatResponse = async (userMessage) => {
+    setResponseLoading(true)
     const resChat = await getChatResponseHelper(messageCouples, userMessage)
     setMessageCouples(resChat)
+    setResponseLoading(false)
   }
 
-  const value = { messageCouples, getChatResponse }
+  const value = { messageCouples, getChatResponse, responseLoading }
 
   return (
     <ChatContext.Provider value={ value }>
