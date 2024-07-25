@@ -38,7 +38,7 @@ npm install
 ```env
 REACT_APP_API_URL_CHAT=<URL of chatbot API>
 ```
-4. __API__: This client requests an API which uses the OpenAI API and contains a file exporting feature.
+4. __API__: Client requests go to an API that uses the OpenAI API. The API also provides the chat summary exporting feature.
 
 5. __AWS__: Setting up the AWS services is an optional step as this is on a development environment. However, the same services could be used to create the tools mentioned in the high level view.
 
