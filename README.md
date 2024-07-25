@@ -26,11 +26,11 @@ Chat bot developed to answer every day queries, have communication and be a virt
 
 ### Setting up the development environment:
 
-1. __Cloning the repository__: You would first need to clone this repository on the host you want to set up your development environment.
+1. __Cloning the repository__: You would first need to clone this repository on the host you want to set up your development environment:
 ```shell
 git clone https://github.com/tahmid-saj/chat-sigma.git
 ```
-2. __Installing dependencies__: Install the required NPM packages in package.json
+2. __Installing dependencies__: Install the required NPM packages in __package.json__:
 ```shell
 npm install
 ```
@@ -39,9 +39,7 @@ npm install
 REACT_APP_API_URL_CHAT=<URL of chatbot API>
 ```
 4. __API__: Client requests go to an API that uses the OpenAI API. The API also provides the chat summary exporting feature.
-
 5. __AWS__: Setting up the AWS services is an optional step as this is on a development environment. However, the same services could be used to create the tools mentioned in the high level view.
-
 6. __Running the client__: The client can be run using:
 ```
 npm start
