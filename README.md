@@ -23,7 +23,6 @@ Chat bot developed to answer every day queries, have communication and be a virt
 5. __Monitoring__: Monitoring service which collects data and logs from APIs using CloudWatch, then stores them in S3 to be viewed as a dashboard via an external monitoring tool. 
 6. __Notifications__: Receives various data and logs in S3 buckets and later sends emails (on issues or failtures) using SQS and Lambda.
 <br>
-<br>
 
 ### Setting up the development environment:
 
@@ -35,13 +34,15 @@ git clone https://github.com/tahmid-saj/chat-sigma.git
 ```shell
 npm install
 ```
-4. __Environment variables__: The required environment variables are used:
+3. __Environment variables__: The required environment variables are used:
+```env
+REACT_APP_API_URL_CHAT=<URL of chatbot API>
+```
+4. __API__: This client requests an API which uses the OpenAI API and contains a file exporting feature.
 
-5. __API__: This client requests an API which uses the OpenAI API and contains a file exporting feature.
+5. __AWS__: Setting up the AWS services is an optional step as this is on a development environment. However, the same services could be used to create the tools mentioned in the high level view.
 
-6. __AWS__: Setting up the AWS services is an optional step as this is on a development environment. However, the same services could be used to create the tools mentioned in the high level view.
-
-7. __Running the client__: The client can be run using:
+6. __Running the client__: The client can be run using:
 ```
 npm start
 ```
