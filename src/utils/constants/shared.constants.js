@@ -25,7 +25,7 @@ export const NAV_LINKS = {
     },
     medium: {
       header: "Medium",
-      url: "http://tahmidsajin.com/"
+      url: "https://medium.com/@tahmid.saj/chatbot-design-using-the-openai-api-eff5bb2f1e5c"
     },
     linkedin: {
       header: "LinkedIn",
