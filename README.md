@@ -21,7 +21,7 @@ Chat bot developed to answer every day queries, have communication and be a virt
 3. __OpenAI API service__: OpenAI service which uses different GPT models and tokens.
 4. __Security__: AWS security services (AWS Inspector and GuardDuty) which monitors the security of APIs. Later, data and logs from the services are queried and viewed using an external security tool.
 5. __Monitoring__: Monitoring service which collects data and logs from APIs using CloudWatch, then stores them in S3 to be viewed as a dashboard via an external monitoring tool. 
-6. __Notifications__: Receives various data and logs in S3 buckets and later sends emails (on issues or failtures) using SQS and Lambda.
+6. __Notifications__: Receives various data and logs in S3 buckets and later sends emails (on issues or failures) using SQS and Lambda.
 <br>
 
 ### Setting up the development environment:
