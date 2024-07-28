@@ -16,8 +16,8 @@ export const NAV_LINKS = {
     chat: "/chat",
     export: "/export",
     portfolio: {
-      header: "tahmidsajin.com",
-      url: "http://tahmidsajin.com/"
+      header: "tahmidsajin.io",
+      url: "http://tahmidsajin.io/"
     },
     github: {
       header: "GitHub",
