@@ -34,7 +34,7 @@ const NavigationBar = () => {
               <a className="nav-link" href={`${NAV_LINKS.paths.linkedin.url}`}><ion-icon name="logo-linkedin"></ion-icon></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`${NAV_LINKS.paths.portfolio.url}`}>tahmidsajin.com</a>
+              <a className="nav-link" href={`${NAV_LINKS.paths.portfolio.url}`}>tahmidsajin.io</a>
             </li>
           </ul>
         </div>
