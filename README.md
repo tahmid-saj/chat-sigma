@@ -5,6 +5,103 @@ Chatbot developed to answer every day queries, have communication and be a virtu
 <br>
 <br>
 
+The structure of the codebase is as follows:
+
+```
+chat-sigma/
+└── src/
+    ├── App.js
+    ├── App.test.js
+    ├── assets/
+    ├── components/
+    │   ├── chat/
+    │   │   ├── chat-messages/
+    │   │   │   ├── chat-messages.component.jsx
+    │   │   │   ├── chat-messages.styles.jsx
+    │   │   │   ├── message-couple/
+    │   │   │   │   ├── message-couple.component.jsx
+    │   │   │   │   └── message-couple.styles.jsx
+    │   │   │   ├── sigma-message/
+    │   │   │   │   ├── sigma-message.component.jsx
+    │   │   │   │   └── sigma-message.styles.jsx
+    │   │   │   └── user-message/
+    │   │   │       ├── user-message.component.jsx
+    │   │   │       └── user-message.styles.jsx
+    │   │   └── send-message/
+    │   │       ├── send-message.component.jsx
+    │   │       └── send-message.styles.scss
+    │   ├── export/
+    │   ├── home/
+    │   └── shared/
+    │       ├── button/
+    │       ├── form-input/
+    │       │   ├── form-input.component.jsx
+    │       │   ├── form-input.styles.jsx
+    │       │   └── form-input.styles.scss
+    │       ├── mui/
+    │       │   ├── card/
+    │       │   │   ├── card.component.jsx
+    │       │   │   └── card.styles.scss
+    │       │   ├── circular-progress/
+    │       │   │   └── circular-progress.component.jsx
+    │       │   ├── icon-button/
+    │       │   │   └── icon-button.styles.jsx
+    │       │   ├── linear-progress/
+    │       │   │   └── linear-progress.component.jsx
+    │       │   ├── media-card/
+    │       │   │   ├── media-card.component.jsx
+    │       │   │   └── media-card.styles.jsx
+    │       │   ├── paper/
+    │       │   │   ├── paper.component.jsx
+    │       │   │   └── paper.styles.scss
+    │       │   └── text-field/
+    │       │       └── text-field.component.jsx
+    │       └── navigation/
+    │           ├── navigation.component.jsx
+    │           └── navigation.styles.jsx
+    ├── contexts/
+    │   ├── chat/
+    │   │   └── chat.context.jsx
+    │   └── export/
+    ├── index.js
+    ├── index.scss
+    ├── logo.svg
+    ├── pages/
+    │   ├── chat/
+    │   │   ├── chat.component.jsx
+    │   │   └── chat.styles.jsx
+    │   ├── export/
+    │   │   ├── export.component.jsx
+    │   │   └── export.styles.jsx
+    │   └── home/
+    │       ├── home.component.jsx
+    │       └── home.styles.jsx
+    ├── reportWebVitals.js
+    ├── routes/
+    │   ├── chat/
+    │   │   ├── chat.component.jsx
+    │   │   └── chat.styles.jsx
+    │   ├── export/
+    │   │   └── export.component.jsx
+    │   ├── home/
+    │   │   └── home.component.jsx
+    │   └── navigation/
+    │       ├── navigation.component.jsx
+    │       └── navigation.styles.jsx
+    ├── setupTests.js
+    └── utils/
+        ├── alerts/
+        ├── api-requests/
+        │   └── chat.requests.js
+        ├── constants/
+        │   └── shared.constants.js
+        ├── errors/
+        │   └── chat.errors.js
+        ├── helpers/
+        └── validations/
+            └── chat.validation.js
+```
+
 <figure>
   <img width="927" alt="image" src="https://github.com/user-attachments/assets/3e052a4b-9faa-4bf4-a33c-079843a5942a">
 </figure>
