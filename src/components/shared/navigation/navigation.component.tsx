@@ -25,13 +25,13 @@ const NavigationBar = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href={`${NAV_LINKS.paths.github.url}`}><ion-icon name="logo-github"></ion-icon></a>
+              <a className="nav-link" href={`${NAV_LINKS.paths.github.url}`}>Github</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`${NAV_LINKS.paths.medium.url}`}><ion-icon name="logo-medium"></ion-icon></a>
+              <a className="nav-link" href={`${NAV_LINKS.paths.medium.url}`}>Medium</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`${NAV_LINKS.paths.linkedin.url}`}><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a className="nav-link" href={`${NAV_LINKS.paths.linkedin.url}`}>LinkedIn</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href={`${NAV_LINKS.paths.portfolio.url}`}>tahmidsajin.io</a>
