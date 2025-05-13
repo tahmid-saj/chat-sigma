@@ -1,9 +1,11 @@
-import { useState, createContext } from "react";
+import { useState, createContext, FC } from "react";
 import { validateChatMessageInput } from "../../utils/validations/chat.validation";
 import { getChatResponse } from "../../utils/api-requests/chat.requests";
 
+import { ChatContextType, ChatProviderProps, MessageCouple } from "./chat.types";
+
 // helper functions
-const getChatResponseHelper = async (messageCouples, userMessage) => {
+const getChatResponseHelper = async (messageCouples: MessageCouple[], userMessage: string) => {
   if (validateChatMessageInput(userMessage)) return messageCouples
 
   const res = await getChatResponse(userMessage)
@@ -14,11 +16,11 @@ const getChatResponseHelper = async (messageCouples, userMessage) => {
       userMessage: userMessage,
       sigmaMessage: res
     }
-  ]
+  ] as MessageCouple[]
 }
 
 // initial state
-export const ChatContext = createContext({
+export const ChatContext = createContext<ChatContextType>({
   messageCouples: [],
   // messageCouples structure
   // [
@@ -34,11 +36,11 @@ export const ChatContext = createContext({
 })
 
 // chat provider
-export const ChatProvider = ({ children }) => {
-  const [messageCouples, setMessageCouples] = useState([])
-  const [responseLoading, setResponseLoading] = useState(false)
+export const ChatProvider: FC<ChatProviderProps> = ({ children }) => {
+  const [messageCouples, setMessageCouples] = useState<MessageCouple[]>([])
+  const [responseLoading, setResponseLoading] = useState<boolean>(false)
 
-  const getChatResponse = async (userMessage) => {
+  const getChatResponse = async (userMessage: string) => {
     setResponseLoading(true)
     const resChat = await getChatResponseHelper(messageCouples, userMessage)
     setMessageCouples(resChat)
