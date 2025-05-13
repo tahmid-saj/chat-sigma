@@ -1,9 +1,12 @@
-FROM node:19.8.1
+FROM node:lts-alpine as builder
 
-WORKDIR /usr/src/chat-sigma
-
-COPY ./ ./
-
+WORKDIR /app
+COPY ./package*.json ./
 RUN npm install
+COPY ./ ./
+RUN npm run build
 
-CMD ["/bin/bash"]
+FROM nginx:alpine
+EXPOSE 80
+COPY ./nginx/default.conf ./etc/nginx/conf.d/default.conf
+COPY --from=builder ./app/build ./usr/share/nginx/html
