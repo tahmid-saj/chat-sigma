@@ -9,7 +9,7 @@ export default function MultilineTextFields() {
       sx={{
         '& .MuiTextField-root': { m: 1, width: '100%', backgroundColor: "#444444" },
       }}
-      validate
+      // validate
       autoComplete="off"
     >
       <div>

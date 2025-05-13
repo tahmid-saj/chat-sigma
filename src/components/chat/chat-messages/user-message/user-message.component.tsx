@@ -9,7 +9,7 @@ const paperStyles = {
   margin: "0.75% 2% 0.75% 23%"
 }
 
-const UserMessage = ({ userMessage }) => {
+const UserMessage = ({ userMessage }: { userMessage: string }) => {
   return (
     <Fragment>
       <SimplePaper styles={ paperStyles }>

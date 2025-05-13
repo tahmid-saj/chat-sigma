@@ -12,7 +12,7 @@ const paperStyles = {
   position: "relative"
 }
 
-const SigmaMessage = ({ sigmaMessage }) => {
+const SigmaMessage = ({ sigmaMessage }: { sigmaMessage: string }) => {
   return (
     <SigmaMessageContainer>
       <SimplePaper styles={ paperStyles }>
