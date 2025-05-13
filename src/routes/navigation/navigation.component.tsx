@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Outlet } from "react-router";
 
-import "./navigation.component.jsx"
+import "./navigation.component.js"
 import NavigationBar from "../../components/shared/navigation/navigation.component.jsx";
 
 const Navigation = () => {
